@@ -367,6 +367,8 @@
   #es-art-expand-toggle:checked
   ~ #es-art-expand-btn {
   transform: rotate(180deg);
+  background-color: #1c3453;
+  margin-top: 0;
 }
 
 #es-sodastream.es-sodastream .es-art__hidden {
@@ -520,6 +522,7 @@
 
 #es-sodastream.es-sodastream .es-revolution__slide--4 {
   background-color: #1c3453;
+  max-width: 100%;
 }
 
 #es-sodastream.es-sodastream #es-revolution-carousel {
@@ -554,18 +557,21 @@
   #es-revolution-carousel_2:checked
   ~ .es-revolution__slide--2 {
   margin-left: -200%;
+  opacity: 0;
 }
 
 #es-sodastream.es-sodastream
   #es-revolution-carousel_3:checked
   ~ .es-revolution__slide--3 {
   margin-left: -300%;
+  opacity: 0;
 }
 
 #es-sodastream.es-sodastream
   #es-revolution-carousel_4:checked
   ~ .es-revolution__slide--4 {
   margin-left: -400%;
+  opacity: 0;
 }
 
 #es-sodastream.es-sodastream
@@ -604,7 +610,7 @@
   width: 34px;
   height: 34px;
   top: 45%;
-  left: 222px;
+  left: 95%;
 }
 
 #es-sodastream.es-sodastream #es-revolution-expand-btn5 {
@@ -621,7 +627,7 @@
   width: 34px;
   height: 34px;
   top: 45%;
-  left: 231px;
+  left: 215px;
 }
 
 #es-sodastream.es-sodastream .es-revolution__img--arrow {
@@ -825,7 +831,7 @@
     margin-left: 16px;
   }
   #es-sodastream.es-sodastream .es-kv__title {
-    text-align: right;
+    text-align: center;
     font-size: 290px;
     letter-spacing: -6px;
     margin-top: -70px;
@@ -945,7 +951,7 @@
     margin-top: 24px;
   }
   #es-sodastream.es-sodastream .es-art__hidden {
-    max-height: 700px;
+    max-height: 740px;
   }
   #es-sodastream.es-sodastream #es-art-expand-btn {
     margin-top: -25px;
@@ -983,11 +989,23 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
+  #es-sodastream.es-sodastream .es-revolution__wrapper--4 {
+    justify-content: flex-start;
+  }
+
+  #es-sodastream.es-sodastream .es-revolution__img--6 {
+    height: 467px;
+  }
+
   #es-sodastream.es-sodastream .es-revolution__desc {
     width: 50%;
   }
   #es-sodastream.es-sodastream .es-revolution__desc--2 {
     width: 51%;
+  }
+
+  #es-sodastream.es-sodastream .es-revolution__desc--4 {
+    margin-left: 10%;
   }
 
   #es-sodastream.es-sodastream .es-ingredients__title {
@@ -1030,6 +1048,22 @@
   }
   #es-sodastream.es-sodastream .es-sweet__img--2 {
     max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #es-sodastream.es-sodastream #es-art-expand-toggle:checked ~ .es-art__hidden {
+    max-height: 700px;
+  }
+
+  #es-sodastream.es-sodastream
+    #es-art-expand-toggle:checked
+    ~ #es-art-expand-btn {
+    background-color: #69abc2;
+  }
+
+  #es-sodastream.es-sodastream .es-kv__title {
+    text-align: right;
   }
 }
 
